@@ -6,14 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>BAC mock site</title>
-
-    <!-- Bootstrap CSS CDN -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-    <!-- Bootstrap JS CDN -->
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"
-        defer></script>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/df5ca9d0fd.js"></script>
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
@@ -25,7 +19,11 @@
 <body>
     <header class="header">
         <nav>
-            <div>
+            <div class="nav-img">
+                <img src="assets/images/bac_education_logo.png" alt="BAClogo" class="logo-img">
+            </div>
+
+            <div class="nav-ul">
                 <ul>
                     <li class="nav-links"><a href="">Home</a></li>
                     <li class="nav-links"><a href="">About</a></li>
@@ -35,7 +33,60 @@
                 </ul>
             </div>
         </nav>
+
+        <div class="slider">
+            <div class="slide current">
+                <div class="content">
+                    <h1>one</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Repellendus sunt pos
+                        simus nemo impedit minus ipsa unde quia
+                        ! Asperiores, voluptate illum.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>two</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Repellendus sunt pos
+                        simus nemo impedit minus ipsa unde quia
+                        ! Asperiores, voluptate illum.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="content">
+                    <h1>three</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur
+                        adipisicing elit. Repellendus sunt pos
+                        simus nemo impedit minus ipsa unde quia
+                        ! Asperiores, voluptate illum.</p>
+                </div>
+            </div>
+
+            <div class="buttons">
+                <button id="prev"><i class="fas fa-arrow-left"></i></button>
+                <button id="next"><i class="fas fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+        <section class="whyBAC">
+            <h1 class="whyBac-header">Why Study in BAC</h1>
+            <div class="card">
+                <h3>Personalize Teaching!</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita, tempora!</p>
+            </div>
+            <div class="card">
+                <h3>In demand courses!</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel excepturi pariatur ipsum?</p>
+            </div>
+            <div class="card">
+                <h3>Awesome Student Life!</h3>
+            </div>
+        </section>
+
     </header>
+
+    <script src="index.js"></script>
 </body>
 
 </html>

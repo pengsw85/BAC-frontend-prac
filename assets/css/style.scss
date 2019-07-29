@@ -1,0 +1,52 @@
+@import "_variables";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+// Header
+.header {
+    height: 80vh;
+}
+
+// nav bar
+nav {
+    background: rgba(5,5,5,0.3);
+    
+    div {
+        height: 8vh;
+
+        ul {
+            margin-left: auto;
+            display: flex;
+            justify-content: center;
+
+            background: rgba(200,200,100,0.4);           
+            width: 50%;
+            height: 100%;
+
+            li {
+                width: 6rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                height: 100%;
+
+                &:hover {
+                    background: rgba(200,200,100,1)
+                }
+
+
+                a {
+                    text-decoration: none;
+                }
+            }
+        }
+
+    }
+
+}

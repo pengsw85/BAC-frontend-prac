@@ -414,6 +414,10 @@ input[type=submit]:hover {
   background-color: #FDB933;
   padding: 5% 10% 10% 10%;
   font-family: 'Roboto', sans-serif;
+  -webkit-animation-name: fade;
+          animation-name: fade;
+  -webkit-animation-duration: .6s;
+          animation-duration: .6s;
 }
 
 .container h1 {
@@ -422,9 +426,55 @@ input[type=submit]:hover {
   font-family: 'Montserrat', sans-serif;
 }
 
+@-webkit-keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .popup-contact {
+  display: none;
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 5% 25%;
   background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-contact.open {
+  display: block;
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.close:hover, .close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /******************** footer ************************************/

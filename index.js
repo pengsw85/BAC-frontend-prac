@@ -1,7 +1,7 @@
 const slides = document.querySelectorAll('.slide');
 const next = document.querySelector('#next');
 const prev = document.querySelector('#prev');
-const auto = false; // Auto scroll
+const auto = true;
 const intervalTime = 5000;
 let slideInterval;
 
@@ -53,3 +53,17 @@ prev.addEventListener('click', e => {
     slideInterval = setInterval(nextSlide, intervalTime);
   }
 });
+
+slideInterval = setInterval(nextSlide, intervalTime);
+
+
+const contact = document.querySelector(".contact");
+const popup = document.querySelector(".popup-contact");
+const close = document.querySelector(".close");
+contact.addEventListener("click", () => {
+  popup.classList.toggle("open");
+})
+
+close.addEventListener("click", () => {
+  popup.classList.toggle("open");
+})
